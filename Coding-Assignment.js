@@ -181,7 +181,7 @@ let mimicClock = setInterval(() => {             //*just to mimic userclick, tak
     
     dateTimeLog()                                 //* Calling this function every 3s
     console.log(infoLog)                          //* giving the user a summary of all inputs
-    if(infoLog.length >= 8){                      //* created this condition to stop the counter to mimic a 24hr period
+    if(infoLog.length >= 8){                      //* created this condition to  mimic a 24hr period
         clearInterval(mimicClock);
     }
             
