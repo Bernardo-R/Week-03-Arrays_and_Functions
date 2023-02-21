@@ -1,10 +1,10 @@
-// 1.	Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
+// 1. Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
 
 let ages = [3, 9, 23, 64, 2, 8, 28, 93];
 console.log("Question 1")
 console.log(ages)
 
-//1a.Programmatically subtract the value of the first element
+//1a. Programmatically subtract the value of the first element
 // in the array from the value in the last element of the array.
 console.log("Question 1a")
 function subtracArray(array) {                      //* function takes one array as parameter 
@@ -24,7 +24,7 @@ function subtracArray(array) {                      //* after adding a new value
 
 console.log(subtracArray(ages));
 
-//1c.	Use a loop to iterate through the array and calculate the average age.
+//1c. Use a loop to iterate through the array and calculate the average age.
 let sum = 0;                            //* this is to store the sum value of all elements inside the array 
 for (let i = 0; i < ages.length; i++) {
     sum += ages[i];                    //* starting at 0, since variable sum is 0, then adding the value of each element in the array 
@@ -34,10 +34,10 @@ let average = sum / ages.length;       //* after getting the addition of all ele
 console.log("Question 1c");
 console.log(average);
 
-//2.	Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
+//2. Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
 console.log("Question 2")
 let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
-//2a.	Use a loop to iterate through the array and calculate the average number of letters per name. 
+//2a. Use a loop to iterate through the array and calculate the average number of letters per name. 
 let numOfletters = 0;                           //*  variable created to store the lenght of all elements inside the array 
 for(let i = 0; i < names.length; i++){  
                                             
@@ -48,7 +48,7 @@ let avgLetters = numOfletters / names.length;  //* new variable to store the avg
 console.log("Question 2a");
 console.log(avgLetters);
 
-//2b.	Use a loop to iterate through the array again and concatenate all the names together, separated by spaces. 
+//2b. Use a loop to iterate through the array again and concatenate all the names together, separated by spaces. 
 let concatOfname = "";                      //* this is to store concatenated elements of array 
 for(let i = 0; i < names.length; i++)(      
     concatOfname += names[i] + " "          //* adding every element inside "names array" plus a single space between them. 
@@ -56,15 +56,15 @@ for(let i = 0; i < names.length; i++)(
 console.log("Question 2b")
 console.log(concatOfname)
 
-// 3.How do you access the last element of any array?
+// 3. How do you access the last element of any array?
 console.log("Question 3")
  console.log("console.log(array.length - 1);")
  
- //4.	How do you access the first element of any array?
+ //4. How do you access the first element of any array?
  console.log("Question 4")
  console.log("console.log(array[0]);")
 
-//5.	Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
+//5. Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
 let nameLengths = [];                       //* variable created to store push elements inside the array 
 for(let i = 0; i < names.length; i++){
     nameLengths.push(names[i].length)       //* to send items to array "nameLenghts" 
@@ -72,7 +72,7 @@ for(let i = 0; i < names.length; i++){
 console.log("Question 5")
 console.log(nameLengths)
 
-//6.Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. 
+//6. Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. 
 let total = 0 ;                                     //* variable created to store total amount of element. 
 for(let i = 0; i < nameLengths.length; i++){   
     total += nameLengths[i]                         //* the additing  length of each element inside array.
@@ -101,7 +101,7 @@ function fullName(first, last){           //* this function take two parameters 
 console.log("Question 8")
 console.log("Bernardo", "Rosario")
 
-//9.  Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
+//9. Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
 function sumOfNum(array){                       //* this function takes a parameter 
     let sumOfArray = 0;                         //* this is to store the sum value of all elements inside the array 
     for(let i = 0; i < array.length; i++){      
@@ -114,7 +114,7 @@ function sumOfNum(array){                       //* this function takes a parame
 console.log("Question 9")
 console.log(sumOfNum([50, 51]))
 
-//10.  Write a function that takes an array of numbers and returns the average of all the elements in the array
+//10. Write a function that takes an array of numbers and returns the average of all the elements in the array
 function avgArray(array){                               //* function takes one parameter called "array" 
     let sumOfArray = 0;                                 //* stores value *//
     for(let i = 0; i < array.length; i++){              //* this for loop will iterate as long as "i" is less than arrays lenght. 
@@ -155,7 +155,7 @@ function avgOfArrays(arr1, arr2){                    //* this function takes two
 console.log("Question 11");
 console.log(avgOfArrays([1, 2, 3, 4,], [5, 6, 7,]));
 
-//12.  Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, 
+//12. Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, 
 //and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
 
 console.log("Question 12")
@@ -168,7 +168,7 @@ function willBuyDrink(isHotOutside, moneyInPocket){        //* this function tak
 }
 console.log(willBuyDrink(true, 11))
 
-//13.  Create a function of your own that solves a problem. 
+//13. Create a function of your own that solves a problem. 
 console.log("Question 13") 
 
 
